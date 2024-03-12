@@ -19,7 +19,7 @@ for index,book in enumerate(books):
     
     #book_table = soup2.find('table', class_= "table table-striped").text.replace("  ","").replace("\n","") 
     #book_table = book_table.find("upc") 
-    with open (f'posts/{index}.txt', 'w', encoding="utf-8") as f:   
+    with open (f'./{index}.txt', 'w', encoding="utf-8") as f:   
         f.write(f"""\n Book Name: {book_names}
           \n {book_table}
           \n Book Price: {book_price}
